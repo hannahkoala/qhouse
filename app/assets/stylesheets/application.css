@@ -1,0 +1,106 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ .page-header .form-control {
+   margin: 40px;
+ }
+ .sign-up .form-control {
+   margin: 10px;
+ }
+ .log-in .form-control {
+   margin: 10px;
+ }
+
+ input[type=radio] {
+   width: auto;
+   display: inline-block;
+   vertical-align: middle;
+   padding: 5px;
+ }
+
+ h1 {
+   text-transform: uppercase;
+ }
+
+ .navbar {
+   /*background-color: #2ad45a;*/
+ }
+
+ .navbar img {
+   height: 100%;
+ }
+
+ .navbar .logo {
+   margin: 0;
+   padding: 0;
+ }
+
+ .navbar-default {
+   /*border-bottom: 1px solid #bfd1bd;*/
+   border-bottom: 1px solid #8ab3ff
+ }
+
+ .navbar-margin {
+    margin-bottom: 60px;
+ }
+
+ .btn-primary {
+   background-color: #f2c76c;
+   border-color: #f2c76c;
+ }
+
+ .btn-primary:hover {
+   background-color: #efcf96;
+   border-color: #efcf96;
+ }
+
+ .page-header {
+   /*border-bottom: 1px solid #bfd1bd;*/
+   border-bottom: 1px solid #8ab3ff
+ }
+
+ .container .page-header .jumbotron {
+   border-radius: 0%
+ }
+
+ .jumbotron {
+   background-image: url("jumbotron-image.jpg");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   margin-bottom: 40px;
+   height: 350px;
+   color: white;
+   text-shadow: black 0.1em 0.3em 0.3em !important;
+ }
+
+ .jumbotron h1 {
+   color: #fefaf6;
+   text-shadow: 1px 1px black;
+ }
+
+ .jumbotron-image {
+   height:130px;
+ }
+
+ .sign-up-main {
+   margin-bottom: 40px;
+   height: 350px;
+ }
+
+ .sign-up {
+   margin: 0 50px;
+ }
