@@ -26,7 +26,7 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <% if user_signed_in? %>
-                        <li>Hi, <%= current_user.email %>!</li>
+                    <li><a>Hi, <%= current_user.username %>!</a></li>
                     <% else %>
                     <!-- <li><a href="#">Sign Up!</a></li> -->
                         <li><%= link_to "Sign Up!", new_user_registration_path %></li>
