@@ -1,4 +1,11 @@
-<p id="notice"><%= notice %></p>
-
-<%= link_to 'Edit', edit_page_path(@page) %> |
-<%= link_to 'Back', pages_path %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <p id="notice"><%= notice %></p>
+            <%= link_to 'Edit', edit_page_path(@page) %> |
+            <%= link_to 'Back', pages_path %>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
