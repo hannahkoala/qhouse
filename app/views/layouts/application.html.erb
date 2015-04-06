@@ -24,24 +24,25 @@
                 <a class="navbar-brand logo" href="/"><%= image_tag("logo.png") %></a>
               </div>
                 <ul class="nav navbar-nav navbar-right">
-
                     <% if user_signed_in? %>
-                    <li><a>Hi, <%= current_user.username %>!</a></li>
                     <% else %>
                     <!-- <li><a href="#">Sign Up!</a></li> -->
                         <li><%= link_to "Sign Up!", new_user_registration_path %></li>
                     <% end %>
-
-                    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Log In<span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                  </ul>
-                  </li>
+                    <% if user_signed_in? %>
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Hi, <%= current_user.username %>!<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                        </li>
+                    <% else %>
+                        <li><%= link_to "Log In!", new_user_registration_path %></li>
+                    <% end %>
                 </ul>
             </div>
         </nav>
