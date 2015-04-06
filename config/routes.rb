@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  devise_for :users
-  resources :pages
+    devise_for :users
+    resources :pages
+    devise_scope :user do
+        get 'users/sign_out' => 'devise/sessions#destroy', as: 'sign_out'
+    end
 
-  root 'pages#index'
+    root 'pages#index'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
